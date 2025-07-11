@@ -43,7 +43,7 @@ export async function POST(request) {
     const mailOptions = {
       from: `"${nome}" <${process.env.EMAIL_USER}>`,
 
-      to: process.env.EMAIL_USER,
+      to: "Contatomartori@gmail.com",
 
       replyTo: email,
 
