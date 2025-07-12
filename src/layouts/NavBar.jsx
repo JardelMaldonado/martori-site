@@ -39,7 +39,7 @@ function NavBar() {
   return (
     <nav className="bg-[#c9c9c9] shadow-md">
       <Container>
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-4 sm:px-6 lg:px-4">
           <div>
             <Link href="/">
               <Image
@@ -53,7 +53,7 @@ function NavBar() {
             </Link>
           </div>
 
-          <ul className="hidden md:flex items-center space-x-6">
+          <ul className="hidden md:flex items-center space-x-6 ">
             {navLinksData.map((link) => {
               const isActive = pathname === link.to;
               return (
