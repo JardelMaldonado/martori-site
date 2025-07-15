@@ -5,4 +5,5 @@ export const sanityClient = createClient({
   dataset: "production",
   useCdn: true,
   apiVersion: "2024-06-24",
+  fetch: { cache: 'no-store' }
 });
