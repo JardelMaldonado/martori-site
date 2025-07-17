@@ -7,6 +7,7 @@ import {
   FaPlug,
   FaTools,
   FaListAlt,
+  FaQuestionCircle,
 } from "react-icons/fa";
 
 export const componentesData = [
@@ -94,6 +95,12 @@ export const componentesData = [
       "BORNES, TERMINAIS, SOQUETES PARA CIS",
     ],
   },
+      {
+        id: "assessoria",
+        title: "ASSESSORIA TÉCNICA",
+        icon: FaQuestionCircle,
+        items: ["NA ESPECIFICAÇÃO, COMPRA OU TROCA DE COMPONENTES ELETRÔNICOS."],
+      },
 ];
 
 export { FaTools, FaListAlt };

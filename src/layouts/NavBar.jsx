@@ -24,7 +24,7 @@ const navLinksData = [
   { to: "/componenteseletronicos", text: "Componentes", icon: FaMicrochip },
   { to: "/instrumentos", text: "Instrumentos", icon: FaTools },
   { to: "/maquinas", text: "Máquinas", icon: FaWrench },
-  { to: "/ferramentas", text: "Ferramentas", icon: FaCogs },
+  { to: "/ferramentas", text: "Ferramental", icon: FaCogs },
   { to: "/engenharia", text: "Engenharia", icon: MdEngineering },
   { to: "/tematica", text: "Temática", icon: IoBookOutline },
   { to: "/cestec", text: "CESTEC", icon: FaUniversity },

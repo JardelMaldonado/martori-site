@@ -5,6 +5,7 @@ import {
   FaLeaf,
   FaTools,
   FaListAlt,
+  FaQuestionCircle,
 } from "react-icons/fa";
 
 export const ferramentasData = [
@@ -18,7 +19,7 @@ export const ferramentasData = [
   },
   {
     id: "farmaceutico",
-    title: "FARMACÊUTICO",
+    title: "QUÍMICO-FARMACÊUTICO",
     icon: FaMortarPestle,
     items: [
       "DESSECADOR, PROVETA, PIPETA, FUNIL, VISCOSÍMETRO",
@@ -40,6 +41,12 @@ export const ferramentasData = [
     icon: FaLeaf,
     items: ["FERRAMENTAL EM AÇO ZINCADO & INOX"],
   },
+    {
+      id: "assessoria",
+      title: "ASSESSORIA TÉCNICA",
+      icon: FaQuestionCircle,
+      items: ["NA ESPECIFICAÇÃO, COMPRA OU TROCA DE FERRAMENTAS."],
+    },
 ];
 
 export { FaTools, FaListAlt };
