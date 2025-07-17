@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
-import { sanityClient } from "@/lib/sanityClient";
 
 import {
   instrumentosData,
@@ -14,9 +13,7 @@ import PageLayout from "@/components/PageLayout";
 import ImageTextCard from "@/components/ImageTextCard";
 import InfoCard from "@/components/InfoCard";
 
-import { FaStar } from "react-icons/fa";
 
-const novidadesQuery = `*[_type == "secaoNovidades"][0]`;
 
 function Instrumentos() {
   const [activeTabId, setActiveTabId] = useState(instrumentosData[0].id);
@@ -24,18 +21,6 @@ function Instrumentos() {
   const activeSection = instrumentosData.find(
     (section) => section.id === activeTabId
   );
-
-  const [novidadesData, setNovidadesData] = useState(null);
-
-  useEffect(() => {
-    async function fetchNovidades() {
-      const data = await sanityClient.fetch(novidadesQuery);
-
-      setNovidadesData(data);
-    }
-
-    fetchNovidades();
-  }, []);
 
   const handleCategoryClick = (categoryId) => {
     if (instrumentosData.some((section) => section.id === categoryId)) {
@@ -103,34 +88,10 @@ function Instrumentos() {
               </button>
             ))}
 
-            <button
-              key="novidades"
-              onClick={() => setActiveTabId("novidades")}
-              className={`px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 flex items-center gap-2 ${
-                activeTabId === "novidades"
-                  ? "bg-[#0f8d6b] text-white"
-                  : "bg-white hover:bg-gray-100 text-gray-700 border border-gray-300"
-              }`}
-            >
-              <FaStar /> NOVIDADES
-            </button>
           </div>
 
           <div className="animate-fadeIn min-h-[150px]">
-            {activeTabId === "novidades" ? (
-              <div>
-                <h4 className="font-semibold text-xl text-[#0f8d6b] mb-3 flex items-center">
-                  <FaStar className="mr-2" />
-
-                  {novidadesData?.tituloComponentes || "Novidades"}
-                </h4>
-                <p className="text-gray-800 text-base leading-relaxed">
-                  {novidadesData?.descricaoComponentes ||
-                    "Nenhuma novidade no momento."}
-                </p>
-              </div>
-            ) : (
-              activeSection && (
+              {activeSection && (
                 <div>
                   <h4 className="font-semibold text-xl text-[#0f8d6b] mb-3 flex items-center uppercase">
                     {activeSection.icon && (
@@ -147,7 +108,6 @@ function Instrumentos() {
                     ))}
                   </ul>
                 </div>
-              )
             )}
           </div>
 

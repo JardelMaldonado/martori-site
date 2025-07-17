@@ -1,8 +1,5 @@
 "use client";
-
-import { useState, useEffect } from "react";
-
-import { sanityClient } from "@/lib/sanityClient";
+import { useState } from 'react';
 
 import { componentesData, FaTools, FaListAlt } from "@/data/componentesData.js";
 
@@ -10,9 +7,7 @@ import PageLayout from "@/components/PageLayout";
 import ImageTextCard from "@/components/ImageTextCard";
 import InfoCard from "@/components/InfoCard";
 
-import { FaStar } from "react-icons/fa";
 
-const novidadesQuery = `*[_type == "secaoNovidades"][0]`;
 
 function ComponentesEletronicos() {
   const [activeTabId, setActiveTabId] = useState(componentesData[0].id);
@@ -20,18 +15,6 @@ function ComponentesEletronicos() {
   const activeSection = componentesData.find(
     (section) => section.id === activeTabId
   );
-
-  const [novidadesData, setNovidadesData] = useState(null);
-
-  useEffect(() => {
-    async function fetchNovidades() {
-      const data = await sanityClient.fetch(novidadesQuery);
-
-      setNovidadesData(data);
-    }
-
-    fetchNovidades();
-  }, []);
 
   const handleCategoryClick = (categoryId) => {
     if (componentesData.some((section) => section.id === categoryId)) {
@@ -98,51 +81,25 @@ function ComponentesEletronicos() {
                 {section.title}
               </button>
             ))}
-
-            <button
-              key="novidades"
-              onClick={() => setActiveTabId("novidades")}
-              className={`px-4 py-2 text-sm font-semibold rounded-md transition-colors duration-200 flex items-center gap-2 ${
-                activeTabId === "novidades"
-                  ? "bg-[#0f8d6b] text-white"
-                  : "bg-white hover:bg-gray-100 text-gray-700 border border-gray-300"
-              }`}
-            >
-              <FaStar /> NOVIDADES
-            </button>
           </div>
 
           <div className="animate-fadeIn min-h-[150px]">
-            {activeTabId === "novidades" ? (
+            {activeSection && (
               <div>
-                <h4 className="font-semibold text-xl text-[#0f8d6b] mb-3 flex items-center">
-                  <FaStar className="mr-2" />
-
-                  {novidadesData?.tituloComponentes || "Novidades"}
+                <h4 className="font-semibold text-xl text-[#0f8d6b] mb-3 flex items-center uppercase">
+                  {activeSection.icon && (
+                    <activeSection.icon className="mr-2" />
+                  )}
+                  {activeSection.title}
                 </h4>
-                <p className="text-gray-800 text-base leading-relaxed">
-                  {novidadesData?.descricaoComponentes ||
-                    "Nenhuma novidade no momento."}
-                </p>
+                <ul className="list-disc list-inside ml-5 space-y-2 text-gray-800 text-base">
+                  {activeSection.items.map((item, itemIdx) => (
+                    <li key={itemIdx} className="uppercase">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ) : (
-              activeSection && (
-                <div>
-                  <h4 className="font-semibold text-xl text-[#0f8d6b] mb-3 flex items-center uppercase">
-                    {activeSection.icon && (
-                      <activeSection.icon className="mr-2" />
-                    )}
-                    {activeSection.title}
-                  </h4>
-                  <ul className="list-disc list-inside ml-5 space-y-2 text-gray-800 text-base">
-                    {activeSection.items.map((item, itemIdx) => (
-                      <li key={itemIdx} className="uppercase">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )
             )}
           </div>
 

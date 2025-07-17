@@ -5,10 +5,9 @@ import {visionTool} from '@sanity/vision'
 
 import promocao from './schemas/promocao' 
 import assuntoDaSemana from './schemas/assuntoDaSemana' 
-import blockContent from './schemas/blockContent'
-import secaoNovidades from './schemas/secaoNovidades' 
+import blockContent from './schemas/blockContent' 
 
-const schemaTypes = [promocao, assuntoDaSemana, blockContent, secaoNovidades]
+const schemaTypes = [promocao, assuntoDaSemana, blockContent]
 
 export default defineConfig({
   name: 'default',
