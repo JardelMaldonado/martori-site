@@ -12,6 +12,7 @@ import {
   FaChair,
   FaListAlt,
   FaWrench,
+  FaMicroscope,
 } from "react-icons/fa";
 
 export const cestecData = [
@@ -31,7 +32,13 @@ export const cestecData = [
     id: "Mecanica",
     title: "MECÂNICA DE PRECISÃO",
     icon: FaWrench,
-    items: ["MICRO MECÂNICA"],
+    items: ["SERVIÇOS DIVERSOS"],
+  },
+      {
+    id: "Micro Mecanica",
+    title: "MICRO MECÂNICA",
+    icon: FaMicroscope,
+    items: ["SERVIÇOS DIVERSOS"],
   },
   {
     id: "construcao",

@@ -24,6 +24,7 @@ function Tematica() {
   return (
     <PageLayout
       title="TEMÁTICA"
+      subtitle="Consultas & Comercialização"
       cardBgColor="bg-amber-50"
       backgroundImage="/fundotematica.jpg"
     >
