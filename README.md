@@ -4,7 +4,7 @@
 
 Bem-vindo ao repositório do site institucional da **Martori Eletro Eletrônica**. Este projeto foi desenvolvido para apresentar os serviços, produtos e a vasta experiência da empresa no mercado de eletroeletrônica, oferecendo um canal de comunicação direto e eficiente com seus clientes.
 
-O site foi construído com tecnologias modernas, focando em performance, SEO e uma experiência de usuário fluida. O conteúdo dinâmico, como "Novidades" e "Assunto da Semana", é gerenciado através de um CMS headless (Sanity), permitindo que o cliente atualize o site de forma autônoma.
+O site foi construído com tecnologias modernas, focando em performance, SEO e uma experiência de usuário fluida. O conteúdo dinâmico, como "Promocões" e "Assunto da Semana", é gerenciado através de um CMS headless (Sanity), permitindo que o cliente atualize o site de forma autônoma.
 
 ---
 
