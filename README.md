@@ -4,7 +4,7 @@
 
 Bem-vindo ao repositório do site institucional da **Martori Eletro Eletrônica**. Este projeto foi desenvolvido para apresentar os serviços, produtos e a vasta experiência da empresa no mercado de eletroeletrônica, oferecendo um canal de comunicação direto e eficiente com seus clientes.
 
-O site foi construído com tecnologias modernas, focando em performance, SEO e uma experiência de usuário fluida. O conteúdo dinâmico, como "Novidades" e "Assunto da Semana", é gerenciado através de um CMS headless (Sanity), permitindo que o cliente atualize o site de forma autônoma.
+O site foi construído com tecnologias modernas, focando em performance, SEO e uma experiência de usuário fluida. O conteúdo dinâmico, como "Promocões" e "Assunto da Semana", é gerenciado através de um CMS headless (Sanity), permitindo que o cliente atualize o site de forma autônoma.
 
 ---
 
@@ -15,7 +15,7 @@ Este projeto foi construído com o seguinte ecossistema de tecnologias:
 - **[Next.js](https://nextjs.org/)**: Framework React para produção, utilizado para renderização no servidor (SSR), geração de site estático (SSG) e otimizações de performance.
 - **[React](https://react.dev/)**: Biblioteca JavaScript para a construção da interface de usuário.
 - **[Tailwind CSS](https://tailwindcss.com/)**: Framework de CSS "utility-first" para a estilização rápida e responsiva dos componentes.
-- **[Sanity.io](https://www.sanity.io/)**: Plataforma de conteúdo headless (CMS) utilizada para gerenciar o conteúdo dinâmico do site (descrições, novidades, etc.).
+- **[Sanity.io](https://www.sanity.io/)**: Plataforma de conteúdo headless (CMS) utilizada para gerenciar o conteúdo dinâmico do site (promoções e assunto da semana).
 - **[Nodemailer](https://nodemailer.com/)**: Módulo para Node.js para o envio de e-mails através do formulário de contato.
 - **[Google reCAPTCHA v3](https://www.google.com/recaptcha/about/)**: Para proteção do formulário de contato contra spam e bots.
 - **[Vercel](https://vercel.com/)**: Plataforma de hospedagem e deploy contínuo, otimizada para projetos Next.js.
