@@ -28,6 +28,7 @@ function Engenharia() {
   return (
     <PageLayout
       title="ENGENHARIA"
+      subtitle="Consultoria e Serviços"
       cardBgColor="bg-slate-100"
       backgroundImage="/fundoengenharia.jpg"
     >
@@ -39,10 +40,6 @@ function Engenharia() {
           <h3 className="font-bold text-xl md:text-2xl text-[#0f8d6b] mb-4 tracking-wide">
             ENGENHARIA DE PRODUTO & APLICAÇÃO
           </h3>
-          <h4 className="font-bold text-xl md:text-2xl text-[#0f8d6b] mb-4 tracking-wide">
-            CONSULTORIA & SERVIÇOS
-          </h4>
-
           <ul className="space-y-2">
             {engenhariaData.map((category) => {
               const isActive = activeTabId === category.id;

@@ -24,6 +24,7 @@ function Cestec() {
   return (
     <PageLayout
       title="CESTEC"
+      subtitle="Suporte Técnico Especializado"
       cardBgColor="bg-white"
       backgroundImage="/fundocestec.jpg"
     >
