@@ -27,7 +27,7 @@ function Maquinas() {
     <PageLayout
       title="MÁQUINAS & EQUIPAMENTOS"
       subtitle="Consultoria & Comercialização"
-      cardBgColor="bg-gray-100"
+      cardBgColor="bg-slate-100"
       backgroundImage="/fundomaquina.jpg"
     >
       <div className="space-y-8 md:space-y-12">

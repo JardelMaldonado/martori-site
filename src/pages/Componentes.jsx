@@ -26,7 +26,7 @@ function ComponentesEletronicos() {
     <PageLayout
       title="COMPONENTES ELETRÔNICOS"
       subtitle="Consultoria & Comercialização"
-      cardBgColor="bg-green-50"
+      cardBgColor="bg-slate-100"
       backgroundImage="/fundocomponents.jpeg"
     >
       <div className="space-y-8 md:space-y-12">
@@ -34,7 +34,7 @@ function ComponentesEletronicos() {
           imageUrl="/componentes.jpeg"
           imageAlt="Componentes Eletrônicos Diversos"
         >
-          <h3 className="font-semibold text-lg md:text-xl text-[#0f8d6b] mb-4 p-3 md:whitespace-nowrap ">
+          <h3 className="font-semibold text-lg md:text-xl text-[#d32c2c] mb-4 p-3 md:whitespace-nowrap ">
             NÃO FORNECEMOS COMPONENTES PARA ELETRODOMÉSTICOS
           </h3>
 

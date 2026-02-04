@@ -43,7 +43,7 @@ function Contato() {
 
             try {
                 const response = await fetch("/api/contact", {
-                    method: "POST", // Método da requisição.
+                    method: "POST",
                     headers: { "Content-Type": "application/json" },
 
                     body: JSON.stringify({ ...formData, gRecaptchaToken }),

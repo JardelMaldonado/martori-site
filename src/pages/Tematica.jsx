@@ -25,7 +25,7 @@ function Tematica() {
     <PageLayout
       title="TEMÁTICA"
       subtitle="Consultas & Comercialização"
-      cardBgColor="bg-amber-50"
+      cardBgColor="bg-slate-100"
       backgroundImage="/fundotematica.jpg"
     >
       <div className="space-y-8 md:space-y-12">

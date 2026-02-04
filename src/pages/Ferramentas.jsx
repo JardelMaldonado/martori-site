@@ -29,7 +29,7 @@ function Ferramentas() {
     <PageLayout
       title="FERRAMENTAL"
       subtitle="Consultoria & Comercialização"
-      cardBgColor="bg-amber-50"
+      cardBgColor="bg-slate-100"
       backgroundImage="/fundoferramenta.jpg"
     >
       <div className="space-y-8 md:space-y-12">
