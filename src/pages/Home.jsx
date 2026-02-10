@@ -32,11 +32,6 @@ function Home() {
         </span>
 
         <div className="mt-12 pt-8 border-t border-gray-500/50 w-full max-w-3xl">
-          <h2 className="font-bold text-2xl md:text-3xl mb-3 text-white flex items-center justify-center gap-3">
-            <FaExclamationTriangle className="text-yellow-400" />
-            NÃO SOMOS LOJA
-          </h2>
-
           <p className="font-semibold md:text-2xl text-gray-200">
             Nosso foco é a prestação de serviços técnicos, consultoria e
             fornecimento especializado sob demanda.
